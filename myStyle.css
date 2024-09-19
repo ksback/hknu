@@ -1,0 +1,97 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#menu {
+    height: 4vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+#content {
+    height: 90vh;
+    overflow: visible; /* 팝업이 보이도록 설정 */
+    display: flex; /* Flexbox로 변경 */
+    flex-wrap: wrap; /* 줄 바꿈 허용 */
+    z-index: 1;
+    gap: 0; /* yearBox들 간의 간격을 0으로 설정 */
+    position: relative; /* 자식 요소의 z-index에 영향을 주기 위해 상대 위치 설정 */
+}
+
+
+.yearDataBox {
+    display: flex; /* Flexbox로 설정 */
+    flex-direction: column; /* 세로 방향으로 배치 */
+    padding: 0; /* 패딩 0 */
+    margin: 0; /* 마진 0 */
+    position: relative;
+    z-index: 2;
+}
+
+.dataBox {
+    background-color: #ffffff;
+    border: 1px solid rgba(62, 62, 62, 0.1);
+    box-sizing: border-box;
+    width: 80px; /* 원하는 너비 설정 */
+    height: 80px; /* 너비와 동일한 높이 설정 */
+    position: relative; /* 팝업 위치 기준 */
+    z-index: 1; /* dataBox의 z-index를 1로 설정 */
+}
+
+.popup {
+    position: absolute; /* 절대 위치 */
+    background-color: rgb(255, 255, 255); /* 반투명 배경 */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgb(0, 0, 0); /* 텍스트 색상 */
+    padding: 20px; /* 패딩 */
+    z-index: 1000; /* 다른 요소 위에 표시 */
+    display: none; /* 기본적으로 숨김 */
+    font-size: 12px;
+}
+
+
+
+
+
+#time{
+    z-index: -1;
+    height: 6vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+#timeText{
+    height: 2vh;
+}
+
+#timeLine {
+    height: 4vh;
+    display: flex; /* Flexbox로 설정 */
+    justify-content: space-evenly; /* 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    overflow-x: auto; /* 가로 스크롤 허용 */
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+
+.timeLineText {
+    font-size: 12px; /* 폰트 크기 설정 */
+    font-weight: 600;
+    display: flex; /* Flexbox로 설정 */
+    justify-content: center; /* 중앙 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    height: 100%; /* 박스의 높이에 맞춤 */
+    color: #000000; /* 텍스트 색상 설정 */
+}
+
+.timeLineBox {
+    height: 100%; /* 높이를 100%로 설정하여 timeLine의 높이에 맞춤 */
+    display: flex; /* Flexbox로 설정 (필요 시 추가) */
+    justify-content: center; /* 중앙 정렬 (필요 시 추가) */
+    align-items: center; /* 세로 중앙 정렬 (필요 시 추가) */
+    overflow: hidden;
+}
+
