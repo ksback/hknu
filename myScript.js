@@ -34,29 +34,6 @@ fetch(csvUrl)
         const boxWidth = contentWidth / numberOfYears;
 
 
-        /* 타임라인 코드 주석
-        // timeLine div 설정
-        const timeLineDiv = document.getElementById('timeLine');
-        timeLineDiv.style.width = `${contentWidth}px`;
-        //->content width값 똑같이
-
-        // timeLine에 박스 추가 및 년도 텍스트 추가
-        years.forEach(year => {
-            const timeLineBox = document.createElement('div');
-            timeLineBox.className = 'timeLineBox';
-            timeLineBox.style.width = `${boxWidth}px`;
-
-            const timeLineText = document.createElement('div');
-            timeLineText.className = 'timeLineText';
-            timeLineText.textContent = year;
-            timeLineText.style.transform = 'rotate(90deg)';
-            timeLineText.style.whiteSpace = 'nowrap';
-
-            timeLineBox.appendChild(timeLineText);
-            timeLineDiv.appendChild(timeLineBox);
-        });
-        */
-
 // 연도별 데이터 그룹화
         const yearDataMap = {};
         arrayData.slice(1).forEach(row => {
