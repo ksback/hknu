@@ -1,4 +1,4 @@
-const csvUrl = 'https://raw.githubusercontent.com/ksback/hknu/refs/heads/main/241013hknu.csv'; // 실제 URL 입력
+const csvUrl = 'https://raw.githubusercontent.com/ksback/hknu/refs/heads/main/hknu1014.csv'; // 실제 URL 입력
 
 // 색상 설정
 const colorMap = {
