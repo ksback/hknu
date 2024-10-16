@@ -1,4 +1,4 @@
-const token = 'YOUR_PERSONAL_ACCESS_TOKEN'; // 발급받은 토큰
+const token = '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'; // 발급받은 토큰
 
 fetch('https://api.github.com/user/repos', {
     method: 'GET',
