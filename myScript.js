@@ -1,3 +1,20 @@
+const token = 'YOUR_PERSONAL_ACCESS_TOKEN'; // 발급받은 토큰
+
+fetch('https://api.github.com/user/repos', {
+    method: 'GET',
+    headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+    }
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data); // 리포지토리 정보 출력
+})
+.catch(error => {
+    console.error('Error:', error);
+});
+
 const csvUrl = 'https://raw.githubusercontent.com/ksback/hknu/refs/heads/main/hknu1016.csv';
 
 const colorMap = {
