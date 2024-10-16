@@ -15,6 +15,23 @@ fetch('https://api.github.com/user/repos', {
     console.error('Error:', error);
 });
 
+
+fetch('https://api.github.com/rate_limit', {
+    method: 'GET',
+    headers: {
+        'Authorization': `token ${token}`,
+        'Accept': 'application/vnd.github.v3+json'
+    }
+})
+.then(response => response.json())
+.then(data => {
+    console.log(data); // Rate limit 정보 출력
+})
+.catch(error => {
+    console.error('Error:', error);
+});
+
+\
 const imageCache = {}; // 이미지 캐시 객체
 const imagePaths = new Set(); // 중복 방지를 위한 Set
 
