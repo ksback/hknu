@@ -1,4 +1,4 @@
-const token = 'YOUR_PERSONAL_ACCESS_TOKEN'; // 발급받은 토큰
+const token = 'Secret scanning found a GitHub Personal Access Token secret on line 1. '; // 발급받은 토큰
 
 fetch('https://api.github.com/user/repos', {
     method: 'GET',
