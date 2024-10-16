@@ -31,7 +31,7 @@ fetch('https://api.github.com/rate_limit', {
     console.error('Error:', error);
 });
 
-\
+
 const imageCache = {}; // 이미지 캐시 객체
 const imagePaths = new Set(); // 중복 방지를 위한 Set
 
